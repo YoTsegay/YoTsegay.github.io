@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+   <p>First value</p>
+   <p><input type="text" id="firstValue" value="5"/></p>
+   <p>Secound value</p>
+   <p><input type="text" id="secondValue" value="5"/></p>
+   <p>Operations:</p>
+   <input type="button"value="+" onclick="add()"/>
+   <input type="button"value="*" onclick="multi()"/>
+   <input type="button"value="-"onclick="sub()"/>
+   <input type="button"value="/"onclick="divide()"/>
+   
+  
+
+ <pre>Result=<span id="Operation"></span> </pre>
+ 
+
+
+<br>
+   
+ 
+    <script>
+ 
+       function add() {
+          let firstValue=document.getElementById("firstValue");
+          let secoundValue=document.getElementById("secondValue");
+          let sum=parseInt(firstValue.value) + parseInt( secoundValue.value);
+         
+         alert(sum);
+       
+          
+         document.getElementById("Operation").innerHTML=sum;
+ 
+       }
+
+       function multi(){
+         let firstValue=document.getElementById("firstValue");
+          let secoundValue=document.getElementById("secondValue");
+          let product=parseInt(firstValue.value) * parseInt(secoundValue.value); 
+         alert(product)
+        
+          document.getElementById("Operation").innerHTML=product;
+ 
+       }
+
+       function divide(){
+         let firstValue=document.getElementById("firstValue");
+          let secoundValue=document.getElementById("secondValue");
+          let div=parseInt(firstValue.value) / parseInt(secoundValue.value); 
+          alert(div)
+          document.getElementById("Operation").innerHTML=div;
+ 
+       }
+
+       function sub(){
+        let firstValue=document.getElementById("firstValue");
+          let secoundValue=document.getElementById("secondValue");
+          let sub=parseInt(firstValue.value) - parseInt(secoundValue.value); 
+          alert(sub)
+          document.getElementById("Operation").innerHTML=sub;
+       
+       }
+    </script>
+</html>

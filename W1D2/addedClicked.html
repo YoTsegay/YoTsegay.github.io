@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="input">input</label>
+    <br />
+    <input type="input" id="input1" value="hello" />
+    <br />
+    <br />
+    <label for="output">output</label>
+    <br />
+    <textarea name="output" id="output1" cols="30" rows="10"></textarea>
+    <br />
+    <button onclick="clickInput()">click to add</button>
+
+    <script>
+      function clickInput() {
+        const x = document.getElementById("input1").value;
+        document.getElementById("output1").innerHTML = x;
+        document.getElementById("input1").value = null;
+      }
+    </script>
+  </body>
+</html>

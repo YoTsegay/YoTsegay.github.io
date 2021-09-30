@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="inventory.css" />
+    <script src="inventory.js"></script>
+    <style>
+      #tableheader {
+        background-color: blueviolet;
+        top: 100px;
+      }
+      #button {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Inventory</h2>
+    <label for="itemName">Item Name :</label>
+    <br />
+    <br />
+    <input type="text" id="name" />
+    <br />
+    <br />
+    <label for="itemcategory">Item Category :</label>
+    <br />
+    <br />
+    <input type="text" id="category" />
+    <br />
+    <br />
+    <label for="Quantity">Quantity:</label>
+    <br />
+    <input type="text" id="quantity" />
+    <br />
+    <button id="button">Add</button>
+   
+
+
+    <section>
+      <table border="2px">
+        <tr id="tableheader">
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td class="name1"></td>
+          <td class="category1"></td>
+          <td class="quantity1"></td>
+        </tr>
+
+        <tr>
+          <td class="name1"></td>
+          <td class="category1"></td>
+          <td class="quantity1"></td>
+        </tr>
+
+        <tr>
+          <td class="name1"></td>
+          <td class="category1"></td>
+          <td class="quantity1"></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
