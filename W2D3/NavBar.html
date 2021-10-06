@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .mainBox{
+                /* border:3px solid goldenrod; */
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position:100%;
+                background-color: #5a524ab6;
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                padding: 20px;
+                border-radius: 5px;
+
+                
+            }
+            .box1{
+                /* border: 2px solid aqua; */
+                background-color: rgba(18, 20, 13, 0.658);
+                width: 100%;
+                display: flex;
+                border-radius: 5px;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .box2{
+                /* border: 2px solid aqua; */
+                background-color: rgba(26, 27, 24, 0.658);
+                width: 100%;
+                display: flex;
+                border-radius: 5px;
+                align-items: center;
+                justify-content: space-between;
+                
+                
+            }
+            .box3{
+                /* border: 2px solid aqua; */
+                background-color: H(151, 235, 17, 0.658);
+                width: 100%;
+                display: flex;
+                border-radius: 5px;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .nestedBox1{
+                /* border: 2px solid rgb(22, 129, 129); */
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .nestedBox2{
+                /* border: 2px solid rgb(22, 129, 129); */
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding-left: 50px;
+                
+            }
+            .nestedBox3{
+                /* border: 2px solid rgb(22, 129, 129); */
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding-right: 50px;
+
+            }
+            p{
+                color:rgb(29, 19, 18);
+                font-weight: bolder;
+                
+            }
+            input{
+                background-color:rgb(22, 21, 21);
+                color: rgb(104, 94, 94);
+                border-radius: 15px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="mainBox">
+        <div class=box1>
+            <p>LOGOBAKERY</p>
+            <div class="nestedBox1">
+                <p>Home</p>
+                <p>Menu</p>
+                <p>About</p>
+            </div>
+            <input type="button" value="Contact">
+        </div>
+        <div class=box2>
+            <div class="nestedBox2">
+                <p>Home</p>
+                <p>Menu</p>
+                <p>About</p>
+                <input type="button" value="Contact">
+            </div>
+            <p style="padding-right: 85px;">LOGOBAKERY</p>
+        </div>
+        <div class=box3>
+            <p style="padding-left: 85px;">LOGOBAKERY</p>
+            <div class="nestedBox3">
+                <p>Home</p>
+                <p>Menu</p>
+                <p>About</p>
+                <input type="button" value="Contact">
+            </div>
+        </div>
+    </div>
+    
+    </body>
+</html>
