@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <!-- <link rel="stylesheet" href="../day3/styles/style.css" /> -->
+  </head>
+  <style>
+      .parent {
+  border: 20px solid rgba(252, 246, 246, 0.6);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: rgb(20, 19, 19);
+  /* margin: 200px; */
+  padding: 100px;
+  margin-top: 200px;
+}
+/* //let create box class which belongs and coomon to the header body and footer */
+.box {
+  margin-left: 10px;
+}
+.header {
+  /*this is also flex container to its own leftSide,MiddleSection and right Section items*/
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: stretch;
+}
+
+.box2 {
+  flex: 0 1 100%;
+  margin: 5px;
+  /* border: 1px solid blue; */
+}
+.leftSideHead {
+   border: 1px solid blue; 
+ 
+}
+.middleSideHead {
+   border: 1px solid blue; 
+}
+.rightSideHead {
+   border: 1px solid blue; 
+}
+.body {
+  /*this is also flex container to its own leftSide,MiddleSection and right Section items*/
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: stretch;
+}
+.leftSideBody .middleSideBody .rightSidebody {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+/* .middleSideBody {
+  border: 1px solid black;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+} */
+/* .rightSidebody {
+  border: 1px solid black;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+} */
+.roundBox {
+  display: flex;
+  border: 1px solid rgb(58, 54, 54);
+  color: grey;
+  gap: 120px;
+  border-radius: 20px;
+  margin: 30px;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+.sendClass {
+  background-color: orange;
+  opacity: 1;
+  color: white;
+  padding: 0px 30px 0px;
+  border-radius: 10px;
+}
+.email {
+  margin-left: 10px;
+  /* padding: 30px; */
+}
+.row2 {
+  /*this is also flex container to its own leftSide,MiddleSection and right Section items*/
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: stretch;
+}
+.footer {
+  /*this is also flex container to its own leftSide,MiddleSection and right Section items*/
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: stretch;
+  /* justify-content: flex-end; */
+  /* justify-items: flex-end; */
+}
+
+p,
+h3,
+label {
+  text-align: justify;
+  color: white;
+}
+img {
+  max-width: 100%;
+  /* object-fit: cover; */
+  /* object-fit: contain; */
+}
+#twitter {
+  margin: 10px;
+  float: left;
+}
+.rightSidfooter p {
+  text-align: left;
+  /* align-self: flex-end; */
+  margin-left: 600px;
+}
+.icon {
+  margin: 5px;
+}
+.leftSidefooter {
+  display: flex;
+  flex-direction: row;
+  /* margin-right: ; */
+}
+.foot {
+  flex: 0 1 100%;
+  margin-left: 20px;
+  margin-left: 20px;
+}
+
+  </style>
+  <body>
+    <section class="parent">
+      <div class="box header">
+        <!-- lets make the header also a flex container with flex items with flex in column direction-->
+        <div class="box2 leftSideHead"></div>
+        <div class="box2 middleSideHead"></div>
+        <div class="box2 rightSideHead"></div>
+      </div>
+
+      <div class="box body">
+        <!-- lets make the header also a flex container with flex items with flex in column direction-->
+        <div class="box2 leftSideBody">
+            <div class="box2 row1">
+            <h3>About Us </h3> 
+           </div>
+            <div class="box2 row2">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                  the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of
+                   type and scrambled it to make a type specimen book. It has survived not 
+                   only five centuries, but also the leap into electronic typesetting, 
+                   remaining essentially unchanged. </p>
+            </div>
+            <div class="box2 row3">
+            <img class="icon" src="phoneLogo.png" alt="nature beauty" width="25px" height="25px">
+              <label for="text">+1 510 679 3456</label>
+            </div>
+            <div class="box2 row4">
+            <img class="icon" src="PostOfficeLogo.jpg" alt="nature beauty" width="25px" height="25px">
+               <label for="text">info@gmail.com</label> 
+            </div>
+            <div class="box2 roundBox">
+              <label class="email" for="text"> enter your-email</label>
+              <label class="sendClass" for="text">Send</label>
+            </div>
+        </div>
+        <div class="box2 middleSideBody">
+          <div class="box2 row1"><h3>Latest Tweet </h3></div>
+          <div class="box2 row2">
+            <img id="twitter" src="Twitter-feature-new.png" alt="nature beauty" width="25px" height="25px">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+          <div class="box2 row3">
+            <img id="twitter" src="Twitter-feature-new.png" alt="nature beauty" width="25px" height="25px">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="box2 row4">
+            <img id="twitter" src="Twitter-feature-new.png" alt="nature beauty" width="25px" height="25px">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="box2 rightSidebody">
+          <div class="box2 row1"><h3>Instagram </h3></div>
+          <div class="box2 row2">
+            <div class="box2 grid1"><img src="images-2.jpeg" alt="nature beauty" width="200" height="200"></div>
+            <div class="box2 grid1"><img src="NatureB.jpeg" alt="nature beauty" width="200" height="200"></div>
+          </div>
+          <div class="box2 row2">
+            <div class="box2 grid1"><img src="NatureB2.jpeg" alt="nature beauty" width="200" height="200"></div>
+            <div class="box2 grid1"><img src="NatureB3.jpeg" alt="nature beauty" width="200" height="200"></div>
+          </div>
+        </div>
+      </div>
+    <!-- <hr> this can be done as follows-->
+    <div style="border-top: 0.4px solid grey; width: 100% ;"></div>
+
+
+      <div class="box footer">
+        <div class="box2 leftSidefooter">
+            <div class="foot"><P>Home</P></div>
+            <div class="foot"> <p>About</p></div>
+            <div class="foot"><p>Our Works</p></div>
+            <div class="foot"><p>Service</p></div>
+            <div class="foot"><p>Block</p></div>
+            <div class="foot"><p>Our Contacts</p></div>
+
+        </div>
+        <!-- <div class="box2 middleSidefooter">this is the midle section</div> -->
+        <div class="box2 rightSidfooter"><p >Colorlib</p></div>
+      </div>
+
+      </div>
+    </section>
+  </body>
+</html>
+
