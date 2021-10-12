@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Test {
+           display: grid; 
+          column-width: 50%;
+          /* display: flex;  */
+          grid-template-areas:
+          'one two two'
+          'one three four'
+          
+
+      }
+
+
+      .one{
+        color: black;
+        background-color: red;
+        min-height: 100%; 
+        grid-area: one;
+      }
+
+      .two{
+        grid-area:two;
+        background-color: green;
+      }
+       
+      .three{
+          background: yellow;
+          grid-area: three;
+
+      }
+
+      .four{
+       background: blue;
+       grid-area: four;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="Test">
+      <div class="one">One</div>
+      <div class="two">two</div>
+      <div class="three">three</div>
+      <div class="four">four</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Test{
+            /* display: flex; */
+            display: grid; 
+            column-width: 50%;
+            grid-template-columns: 'one one one'
+                                   'two three three'
+                                   'four five six'
+        }
+
+        .one{
+            display: flex;
+            color: blue;
+            background-color: red;
+            min-height: 100%;
+            grid-area: auto;
+        
+        }
+        .two{
+            color: brown;
+        }
+
+        .three{
+            color: red;
+        }
+        
+        .four{
+            color: black;
+        }
+
+        .five{
+            color: pink;
+        }
+
+        .six{
+            color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class = "Test">
+    <div class ="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+    </div>
+    
+</body>
+</html>
