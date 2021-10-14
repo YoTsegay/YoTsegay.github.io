@@ -1,0 +1,40 @@
+.bakground { 
+    position: relative; 
+  } 
+  .form-container { 
+    position: absolute; 
+    top: 15vh; 
+    /* left: 10px; */ 
+    background-color: #fff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px 0px; 
+    margin-left: 60px; 
+    display: block; 
+    margin: 0 auto; 
+  } 
+  .heading { 
+    padding: 30px; 
+  } 
+  .name { 
+    margin-bottom: 30px; 
+  } 
+  .userInput { 
+    margin-bottom: 20px; 
+  } 
+  #nameSpace { 
+    margin-right: 30px; 
+  } 
+  .gender { 
+    margin-bottom: 20px; 
+  } 
+  .country { 
+    margin-bottom: 20px; 
+  } 
+  #register { 
+    /* padding: 0 30px 0 30px; */ 
+    width: 100%; 
+    background-color: orange; 
+    border-radius: 5px; 
+    /* visibility: hidden; */ 
+  }
